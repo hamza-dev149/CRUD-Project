@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>CRUD Application</h1>
+      <p>manage your product</p>
+    </div>
+
+    <div class="inputs">
+      <input type="text" id="title" placeholder="Product Title" />
+      <div class="pric">
+        <input type="number" id="price" placeholder="Price" />
+        <input type="number" id="taxes" placeholder="Taxes" />
+        <input type="number" id="ads" placeholder="Ads" />
+        <input type="number" id="discount" placeholder="Discount" />
+      </div>
+      <small id="total">4156</small>
+      <input type="number" id="count" placeholder="Count" />
+      <input type="text" id="category" placeholder="Category" />
+      <button id="submit">Create</button>
+    </div>
+
+    <div class="outputs">
+      <div class="searchBox">
+        <input type="text" id="search" placeholder="Search" />
+        <button id="searchTitle">Search by Title</button>
+        <button id="searchCategory">Search by Category</button>
+      </div>
+
+      <table>
+        <tr>
+          <th>id</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Taxes</th>
+          <th>Ads</th>
+          <th>Discount</th>
+          <th>Total</th>
+          <th>Category</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Product 1</td>
+            <td>1000</td>
+            <td>100</td>
+            <td>50</td>
+            <td>20</td>
+            <td>1130</td>
+            <td>Category A</td>
+            <td><button class="update">Update</button></td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Product 1</td>
+            <td>1000</td>
+            <td>100</td>
+            <td>50</td>
+            <td>20</td>
+            <td>1130</td>
+            <td>Category A</td>
+            <td><button class="update">Update</button></td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
