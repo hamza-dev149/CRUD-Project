@@ -7,7 +7,94 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="head">
+            <h1>CRUD Application</h1>
+            <p>managment your products</p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Product Title">
+            <div class="price">
+                <input type="number" id="price" placeholder="Price">
+                <input type="number" id="taxes" placeholder="Taxes">
+                <input type="number" id="ads" placeholder="Ads">
+                <input type="number" id="discount" placeholder="Discount">
+                <small id="total">12345</small>
+            </div>
+            <input type="number" id="count" placeholder="Count">
+            <input type="text" id="category" placeholder="Category">
+            <button id="submit">Create</button>
+        </div>
+
+        <div class="outputs">
+            <div class="searchBox">
+                <input type="text" id="search" placeholder="Search">
+                <div class="searchButtons">
+                    <button id="searchTitle" class="active">Search by Title</button>
+                    <button id="searchCategory">Search by Category</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sample Product</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>15</td>
+                        <td>100</td>
+                        <td>Sample Category</td>
+                        <td><button class="update">Update</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Another Product</td>
+                        <td>200</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>200</td>
+                        <td>Another Category</td>
+                        <td><button class="update">Update</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Third Product</td>
+                        <td>300</td>
+                        <td>30</td>
+                        <td>15</td>
+                        <td>45</td>
+                        <td>300</td>
+                        <td>Third Category</td>
+                        <td><button class="update">Update</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 
     <script src="main.js"></script>
