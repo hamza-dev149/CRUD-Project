@@ -7,3 +7,13 @@ let total = document.getElementById('total');
 let count = document.getElementById('count');
 let category = document.getElementById('category');
 
+// function get total 
+
+function getTotal()
+{
+    if(price.value != '')
+    {
+        let result = (+price.value + +taxes.value + +ads.value) - +discount.value;
+        total.innerHTML = result
+    }
+}
