@@ -47,4 +47,17 @@ submit.onclick = function()
     }
     dataProduct.push(newProduct);
     localStorage.setItem('product', JSON.stringify(dataProduct));
+    clearInputs();
 }
+
+function clearInputs()
+{
+    title.value = '';
+    price.value = '';
+    taxes.value = '';
+    ads.value = '';
+    discount.value = '';
+    count.value = '';
+    category.value = '';
+}
+
