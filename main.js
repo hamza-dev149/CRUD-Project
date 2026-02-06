@@ -24,7 +24,7 @@ function getTotal()
         total.style.background = '#a00d02'
     }
 }
-
+let dataProduct;
 if(localStorage.product != '')
 {
     dataProduct = JSON.parse(localStorage.product);
@@ -86,6 +86,19 @@ function showData()
 
 
     document.getElementById('tbody').innerHTML = table;
+    let btnDlelte = document.getElementById('deleteAll');
+    if(dataProduct.length > 0)
+    {
+        btnDlelte.innerHTML = `
+        
+        <button onclick = "deleteAll()">Delete All</button>
+        
+        `
+    }
+    else
+    {
+        btnDlelte.innerHTML = '';
+    }
 }
 
 showData();
@@ -95,4 +108,10 @@ function deleteData(i)
     dataProduct.splice(i,1);
     localStorage.product = JSON.stringify(dataProduct);
     showData();
+}
+
+function deleteAll()
+{
+    localStorage.clear();
+
 }
